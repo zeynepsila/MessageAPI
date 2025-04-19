@@ -37,51 +37,6 @@
 ---
 
 
-message-api/
-│
-├── public/                  
-│   └── index.php             → Main entry point of the application (web-accessible)
-│
-├── src/
-│   ├── Controllers/
-│   │   ├── AuthController.php       → Handles user registration and login
-│   │   ├── MessageController.php    → Handles message sending, reading, deleting, etc.
-│   │   └── AdminController.php      → Provides admin-only statistics
-│   │
-│   ├── Middleware/
-│   │   └── JwtMiddleware.php        → Verifies JWT tokens for protected routes
-│   │
-│   ├── Database/
-│   │   └── db.php                   → Initializes PDO database connection
-│   │
-│   └── Routes/
-│       ├── auth.php                → Authentication-related route definitions
-│       ├── message.php             → Message-related route definitions
-│       ├── notification.php        → Notification routes
-│       └── admin.php               → Admin route definitions
-│
-├── app/
-│   ├── settings.php               → Application-level settings (e.g. environment)
-│   ├── dependencies.php           → Registers dependencies into the container
-│   ├── repositories.php           → (Optional) Repository bindings for data access
-│   └── middleware.php             → Global middlewares (JWT, body parser, etc.)
-│
-├── uploads/                      → (Optional) Folder for uploaded files
-├── logs/                         → (Optional) Application log files
-│
-├── .env                          → Environment-specific variables (not committed)
-├── .env.example                  → Shared example file for environment setup
-├── .gitignore                    → Files and folders to be ignored by Git
-├── composer.json                 → Defines PHP dependencies and autoloading
-├── composer.lock                 → Locks dependency versions
-├── README.md                     → Project overview and API documentation
-└── database/
-    └── schema.sql                → (Optional) SQL schema for database initialization
-
-
-
----
-
 
 ## 📁 Setup
 
