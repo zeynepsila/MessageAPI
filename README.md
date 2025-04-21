@@ -48,8 +48,6 @@ cp .env.example .env
 Fill in the .env file:
 
 env
-Kopyala
-Düzenle
 DB_HOST=localhost
 DB_NAME=message_app
 DB_USER=root
@@ -97,13 +95,9 @@ GET /admin/stats
 🔒 All requests must include a valid JWT token:
 
 makefile
-Kopyala
-Düzenle
 Authorization: Bearer <token>
 👤 Admin Test User
 json
-Kopyala
-Düzenle
 {
   "email": "admin@example.com",
   "password": "123456",
